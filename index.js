@@ -1,5 +1,5 @@
 const _ = require('lodash')
-const esClient = require('node-eventstore-client')
+const esClient = require('node-eventstore-client-temp')
 const uuid = require('uuid')
 const { Observable } = require('rxjs')
 const fifo = require('fifo')
@@ -97,7 +97,7 @@ const eventStore = (url) => {
       conn.connect().then(() => {
         conn.subscribeToStreamFrom(
           topic,
-          options.offset,
+          opts.offset,
           true,
           (ev, res) => {
             try {

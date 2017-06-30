@@ -1,6 +1,6 @@
 {
   "name": "eventstore-rx",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "fifo": "^2.3.0",
-    "node-eventstore-client": "^0.1.4",
+    "lodash": "^4.17.4",
+    "node-eventstore-client-temp": "^0.1.4",
     "rxjs": "^5.4.1"
   }
 }
